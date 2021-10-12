@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_women_graph"
+    app:startDestination="@id/womenMainFragment">
+
+
+    <fragment
+        android:id="@+id/womenMainFragment"
+        android:name="com.example.a7minworkout.activity.fragments.women.WomenMainFragment"
+        android:label="fragment_women_main"
+        tools:layout="@layout/fragment_women_main" >
+        <action
+            android:id="@+id/action_womenMainFragment_to_womenStertFragment"
+            app:destination="@id/womenStertFragment"
+            app:popUpTo="@id/womenMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/womenStertFragment"
+        android:name="com.example.a7minworkout.activity.fragments.women.WomenStertFragment"
+        android:label="fragment_women_stert"
+        tools:layout="@layout/fragment_women_stert" >
+        <action
+            android:id="@+id/action_womenStertFragment_to_womenFinishFragment"
+            app:destination="@id/womenFinishFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/womenFinishFragment"
+        android:name="com.example.a7minworkout.activity.fragments.women.WomenFinishFragment"
+        android:label="fragment_women_finish"
+        tools:layout="@layout/fragment_women_finish" />
+</navigation>

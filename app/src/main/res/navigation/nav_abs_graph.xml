@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_abs_graph"
+    app:startDestination="@id/absMainFragment">
+
+    <fragment
+        android:id="@+id/absMainFragment"
+        android:name="com.example.a7minworkout.activity.fragments.abs.AbsMainFragment"
+        android:label="fragment_abs_main"
+        tools:layout="@layout/fragment_abs_main" >
+        <action
+            android:id="@+id/action_absMainFragment_to_absStartFragment"
+            app:destination="@id/absStartFragment"
+            app:popUpTo="@id/absMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/absStartFragment"
+        android:name="com.example.a7minworkout.activity.fragments.abs.AbsStartFragment"
+        android:label="fragment_abs_start"
+        tools:layout="@layout/fragment_abs_start" >
+        <action
+            android:id="@+id/action_absStartFragment_to_absFinishFragment"
+            app:destination="@id/absFinishFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/absFinishFragment"
+        android:name="com.example.a7minworkout.activity.fragments.abs.AbsFinishFragment"
+        android:label="fragment_abs_finish"
+        tools:layout="@layout/fragment_abs_finish" />
+</navigation>

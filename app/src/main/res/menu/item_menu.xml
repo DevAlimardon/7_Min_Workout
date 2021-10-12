@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/startFragment"
+        app:cnb_backgroundColor="@color/kub1"
+        android:icon="@drawable/ic_hushtak"
+        android:iconTint="@color/black"
+        android:title="Workout"></item>
+    <item
+        android:id="@+id/bmiFragment"
+        app:cnb_backgroundColor="@color/kub3"
+        android:icon="@drawable/ic_speed"
+        android:iconTint="@color/black"
+        android:title="Progress"></item>
+    <item
+        android:id="@+id/calendarFragment"
+        app:cnb_backgroundColor="@color/kub4"
+        android:icon="@drawable/ic_baseline_fitness_center_24"
+        android:iconTint="@color/black"
+        android:title="Exercises"></item>
+    <item
+        android:id="@+id/settingFragment"
+        app:cnb_backgroundColor="@color/kub2"
+        android:icon="@drawable/ic_settings"
+        android:iconTint="@color/black"
+        android:title="Setting"></item>
+</menu>
