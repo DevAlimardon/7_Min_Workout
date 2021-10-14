@@ -56,16 +56,21 @@ private lateinit var binding: FragmentAbsStartBinding
             onDestroy()
 
         }
+
+        nextAndBackBtn()
+        restTime()
+        reset()
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         tts!!.speak(
             "hello first exercise ${list!![exercise].name}",
             TextToSpeech.QUEUE_FLUSH,
             null,
             ""
         )
-        nextAndBackBtn()
-        restTime()
-        reset()
-        return binding.root
+        super.onViewCreated(view, savedInstanceState)
     }
 
 
@@ -268,8 +273,9 @@ private lateinit var binding: FragmentAbsStartBinding
                     reset()
                 } else {
                     exercise = 0
-                    findNavController().navigate(R.id.absFinishFragment)
                     onDestroy()
+                    findNavController().navigate(R.id.absFinishFragment)
+
                 }
             }
 

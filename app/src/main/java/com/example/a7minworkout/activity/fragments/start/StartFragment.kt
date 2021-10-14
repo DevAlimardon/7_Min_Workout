@@ -268,8 +268,9 @@ class StartFragment : Fragment(), TextToSpeech.OnInitListener {
                     reset()
                 } else {
                     exercise = 0
-                    findNavController().navigate(R.id.finishFragment)
                     onDestroy()
+                    findNavController().navigate(R.id.finishFragment)
+
                 }
             }
 
