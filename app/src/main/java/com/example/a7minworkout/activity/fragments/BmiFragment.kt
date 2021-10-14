@@ -68,6 +68,7 @@ class BmiFragment : Fragment() {
             if (binding.kg.text.isNullOrEmpty() || binding.sm.text.isNullOrEmpty()) {
                 Toast.makeText(requireContext(), "Please fill all gaps", Toast.LENGTH_SHORT).show()
             } else {
+//                sava
                 SharedPreference.userDate = binding.kg.text.toString()
 
                 val name = binding.kg.text.toString()
